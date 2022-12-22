@@ -1,11 +1,23 @@
+.Footer-section{
+    display: flex;
+    flex-direction: column; 
+    background-color: #0f172a;
+}
+
+.Footer-section > div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 50px;
+    border-radius: 30px;
+    background-color: #131c31;
+}
 .Footer{
     display: flex;
     flex-direction: row;
     width: 90%;
     margin: auto;
-    background-color: #131c31;
+    border-bottom: 1px solid white;
     border-radius: 40px;
-    padding: 60px;
+    padding: 60px 60px 40px 60px;
 }
 
 /* first children */
@@ -95,19 +107,47 @@
     width: 60%;
 }
 
-.Footer >div:nth-child(4) div label:nth-child(1){
+.Footer >div:nth-child(4) div > label:nth-child(1){
     color: white;
 }
-.Footer >div:nth-child(4) div input:nth-child(2){
+.Footer >div:nth-child(4) div > input:nth-child(2){
     padding-bottom: 10px;
     background-color: #131c31;
     border-bottom: 1px solid gray;
 }
-.Footer >div:nth-child(4) div label:nth-child(3){
+.Footer >div:nth-child(4) div > label:nth-child(3){
     color: white;
 }
-.Footer >div:nth-child(4) div textarea:nth-child(4){
+.Footer >div:nth-child(4) div > textarea:nth-child(4){
     background-color: #131c31;
     border-bottom: 1px solid gray;
+    margin-bottom: 15px;
 }
 
+
+
+.copyRight_link{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    padding: 20px 60px 60px 60px;
+    justify-content: space-between;
+    
+}
+
+.copyRight_link > div {
+    color: white;
+}
+.copyRight_link > div> span{
+    color: #84d7f2;
+}
+
+.copyRight_link > ul {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,115 @@
+.Projects{
+    height: 100vh;
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.Projects > h1:nth-child(1){
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Projects > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+.Projects > div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+}
+.Projects >div:nth-child(2) > div > div{
+    display: flex;
+    flex-direction: columns;
+    padding: 10px 10px 15px 10px;
+}
+.Projects > div:nth-child(2) > div:nth-child(1) > div > span:nth-child(1){
+    display: flex;
+    flex-direction: row;
+}
+.Projects > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Projects > div:nth-child(2) > div:nth-child(2) > div > span:nth-child(1){
+    display: flex;
+    flex-direction: row;
+}
+.Projects > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Projects > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 15px 5px 15px 5px;
+}
+.Projects > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) span:nth-child(1){
+    display: flex;
+    flex-direction: row;
+}
+.Projects > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Projects > div:nth-child(3) > div:nth-child(2) > div:nth-child(2){
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+   padding: 15px 5px 15px 5px;
+}
+.Projects > div:nth-child(3) > div:nth-child(2) div:nth-child(2) >span:nth-child(1){
+    display: flex;
+    flex-direction: row ;
+}
+.Projects > div:nth-child(3) > div:nth-child(2) div:nth-child(2) >div:nth-child(3){
+    display: flex;
+    flex-direction: row ;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Projects > div:nth-child(3) > div:nth-child(3) > div:nth-child(2){
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+   padding: 15px 5px 15px 5px;
+}
+.Projects > div:nth-child(3) > div:nth-child(3) div:nth-child(2) >span:nth-child(1){
+    display: flex;
+    flex-direction: row ;
+}
+.Projects > div:nth-child(3) > div:nth-child(3) div:nth-child(2) >div:nth-child(3){
+    display: flex;
+    flex-direction: row ;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .Projects > div:nth-child(3) > div:nth-child(2) > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+}
+.Projects > div:nth-child(3) > div:nth-child(3) > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+} */
