@@ -1,0 +1,23 @@
+.Nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #0f172a;
+}
+.Nav div:nth-child(1){
+    flex:1;
+    color: aliceblue;
+    font-size: 25px;
+}
+.Nav div:nth-child(2){
+    flex: 5;
+    color: #0eaae8;
+    font-weight: 500;
+}
+.Nav div:nth-child(2) ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
