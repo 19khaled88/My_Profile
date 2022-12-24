@@ -21,7 +21,7 @@ const Navbar = () => {
         </ul>
       </div>
       <img
-        src="/menu.png"
+        src={`${menuStatus === true ? '/up-arrow.png' : '/menu.png'}`}
         alt="No Image"
         width="40px"
         height="40px"
