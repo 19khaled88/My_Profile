@@ -1,26 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../CSS/nav.css'
+import { menuItems } from '../../data/data.js'
 const Navbar = () => {
+  const [menuStatus, setMenuStatus] = useState(false)
+  const mobileMenu = () => {
+    setMenuStatus(!menuStatus)
+  }
   return (
     <div className="Nav">
       <div>Logo</div>
       <div>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Resume</li>
-          <li>Contact</li>
-          <li style={{ display: 'flex', flexDirection: 'row' }}>
-            <img
-              src="/search.png"
-              width="30px"
-              height="30px"
-              style={{ marginRight: '5px' }}
-            />
+          {menuItems.map((e) => (
+            <li>{e}</li>
+          ))}
+          <li>
+            <img src="/search.png" width="30px" height="30px" />
             Search
           </li>
         </ul>
+      </div>
+      <img
+        src="/menu.png"
+        alt="No Image"
+        width="40px"
+        height="40px"
+        onClick={() => mobileMenu()}
+      />
+
+      <div id={`${menuStatus === true ? 'activeMenu' : 'inActiveMenu'}`}>
+        {menuItems.map((e) => (
+          <a href={`#${e}`}>{e}</a>
+        ))}
       </div>
     </div>
   )

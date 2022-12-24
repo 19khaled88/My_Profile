@@ -17,7 +17,7 @@
     
     padding: 30px;
     background-color: #004484;
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -32,7 +32,7 @@
     padding-right: 10px;
 }
 .skill > div:nth-child(2) ul:nth-child(2){
-    flex: 5;
+    flex: 7;
     padding-left: 8px;
 }
 .skill > div:nth-child(2) ul:nth-child(2){
@@ -81,8 +81,10 @@
 }
 .skill > div:nth-child(2) ul:nth-child(2) > li >p:nth-child(2){
     color: white;
-    text-align: left;
-    margin:5px 0px 2px 5px
+    text-align: center;
+    margin:5px 0px 2px 5px;
+    font-size:14px;
+
 }
 .skill > div:nth-child(3){
     padding: 25px 20px 5px 20px;
