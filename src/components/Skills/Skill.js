@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../CSS/skill.css'
-import { design, skillSet } from '../../data/data.js'
+import { design, skillSet, tools } from '../../data/data.js'
 const Skill = () => {
   return (
     <div className="skill">
@@ -14,12 +14,13 @@ const Skill = () => {
           {skillSet.map((e, index) => (
             <li key={index}>
               <img src={e.image} alt="No Image" width="100px" height="100px" />
-              <p>{e.info}</p>
+              <p>{e.name}</p>
               <img src={e.logo} alt="No Image" />
             </li>
           ))}
         </ul>
       </div>
+
       <div>
         {design.map((e) => (
           <div className="card w-44 h-32 bg-primary text-primary-content">
@@ -29,6 +30,17 @@ const Skill = () => {
             <img src={e.image} alt="No Image" width="40px" height="40px" />
           </div>
         ))}
+      </div>
+      <div>
+        <p>I love to use them</p>
+        <div>
+          {tools.map((e) => (
+            <div>
+              <img src={e.image} alt="No Image" width="60%" height="40%" />
+              <h3>{e.title}</h3>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

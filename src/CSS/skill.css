@@ -15,7 +15,7 @@
 }
 .skill > div:nth-child(2){
     
-    padding: 30px;
+    padding: 20px;
     background-color: #004484;
     width: 90%;
     margin: auto;
@@ -83,7 +83,7 @@
     color: white;
     text-align: center;
     margin:5px 0px 2px 5px;
-    font-size:14px;
+    font-size:16px;
 
 }
 .skill > div:nth-child(3){
@@ -94,9 +94,60 @@
     margin: auto;
     justify-content: space-evenly;
 }
+.skill > div:nth-child(3) > div{
+  --c: #8A9B0F; /* the border color */
+  --b: 10px;    /* the border thickness*/
+  --g: 5px;     /* the gap on hover */
+  
+  padding: calc(var(--g) + var(--b));
+  --_g: #0000 25%,var(--c) 0;
+  background: 
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+     var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+    conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+     0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: .3s, background-position .3s .3s;
+  cursor: pointer;
+  }
+.skill > div:nth-child(3) > div:hover{
+  background-color: rebeccapurple;
+  --_i: 100%;
+  transition: .3s, background-size .3s .3s;
+}
+
+.skill > div:nth-child(4) {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: center;
+  gap:10px;
+  border: 1px solid orangered;
+  width: 60%;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.skill > div:nth-child(4) > p:nth-child(1){
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+  padding-right: 10px;
+  height: 100%;
+}
+.skill > div:nth-child(4) > div:nth-child(2){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  border-left: 1px solid white;
+  padding: 5px 0px 5px 10px;
+}
 
 
-@keyframes rotating {
+@keyframes rotating { 
     0% {
       transform: rotate(0deg);    
     }
@@ -124,6 +175,7 @@
      @media screen and (min-width: 320px) { 
         .skill{
             height: 100%;
+            padding-bottom: 50px;
         }
         .skill > div:nth-child(2) > span:nth-child(1){
             display: none;
@@ -145,7 +197,30 @@
         .skill > div:nth-child(3) > div{
             width: 100%;
         }
-          
+        .skill > div:nth-child(4){
+          display: flex;
+          flex-direction:column;
+          border: none;
+          width: 80%;
+          margin: auto;
+        }
+        .skill > div:nth-child(4) > p:nth-child(1){
+          display: none;
+        }
+        .skill > div:nth-child(4) > div:nth-child(2){
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          border-left: none;
+          row-gap: 20px;
+          column-gap: 20px;
+          padding-top: 20px;
+          padding-left: 0px;
+        }
+        .skill > div:nth-child(4) > div:nth-child(2) > div{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
        }
        @media screen and (min-width: 480px) {  
           
@@ -180,6 +255,15 @@
         }
         .skill > div:nth-child(3) > div{
             width: 100%;
+        }
+        .skill > div:nth-child(4) > div:nth-child(2){
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          border-left: none;
+          row-gap: 20px;
+          column-gap: 20px;
+          padding-top: 20px;
+          padding-left: 0px;
         }
           
        }
@@ -216,17 +300,29 @@
         .skill > div:nth-child(3) > div{
             width: 100%;
         }
+        .skill > div:nth-child(4) > div:nth-child(2){
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          border-left: none;
+          row-gap: 20px;
+          column-gap: 20px;
+          padding-top: 20px;
+          padding-left: 0px;
+        }
        }
-       @media screen and (min-width: 1200px) {   
+       @media screen and (min-width: 1200px) { 
+        .skill {
+          height: 100vh;
+        }  
         .skill > div:nth-child(2) > span:nth-child(1){
             display: block;
           }
-          .skill > div:nth-child(2) > ul:nth-child(2){
+        .skill > div:nth-child(2) > ul:nth-child(2){
             display: flex;
             flex-direction: row;
             padding-left: 0px;
           }
-          .skill > div:nth-child(3) {
+        .skill > div:nth-child(3) {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             row-gap: 15px;
@@ -234,5 +330,41 @@
         }
         .skill > div:nth-child(3) > div{
             width: 100%;
+        }
+        .skill > div:nth-child(4) {
+          text-align: left;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 15px;
+          align-items: center;
+          gap:10px;
+          border: 1px solid orangered;
+          width: 60%;
+          margin: auto;
+          margin-top: 15px;
+          border-radius: 10px;
+        }
+        .skill > div:nth-child(4) > p:nth-child(1){
+          font-size: 22px;
+          color: white;
+          font-weight: 600;
+          padding-right: 10px;
+          text-align: center;
+          height: 100%;
+          width: 100%;
+          display: block;
+        }
+        .skill > div:nth-child(4) > div:nth-child(2){
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 10px;
+          border-left: 1px solid white;
+          padding: 5px 0px 5px 10px;
+        }
+        .skill > div:nth-child(4) > div:nth-child(2) > div > img {
+          width: 55%;
+          height: 55%;
         }
        }

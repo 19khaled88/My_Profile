@@ -1,0 +1,12 @@
+.canvas > div:nth-child(1){
+    width: 100%;
+    position: relative;
+    height: 100vh;
+  
+}
+
+.canvas > div:nth-child(2){
+    position: absolute;
+    top:10px;
+    z-index: 1px;
+}

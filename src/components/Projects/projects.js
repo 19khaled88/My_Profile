@@ -4,10 +4,14 @@ const Projects = () => {
   return (
     <div className="Projects">
       <h1>Projects</h1>
-      <div>
-        <div class="card w-auto h-72 bg-base-100 shadow-xl">
+      <div className="Mainproject">
+        <div class="card w-auto h-64 bg-base-100 shadow-xl">
           <figure>
-            <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+            <img
+              src="https://placeimg.com/400/225/arch"
+              alt="Shoes"
+              height="100%"
+            />
           </figure>
           <div class="card-body">
             <span>
@@ -26,9 +30,13 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div class="card w-auto h-72 bg-base-100 shadow-xl">
+        <div class="card w-auto h-64 bg-base-100 shadow-xl">
           <figure>
-            <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+            <img
+              src="https://placeimg.com/400/225/arch"
+              alt="Shoes"
+              height="100%"
+            />
           </figure>
           <div class="card-body">
             <span>
@@ -48,7 +56,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="Secondaryproject">
         <div class="card w-64  bg-base-100 shadow-xl">
           <figure class="px-2 pt-2">
             <img
