@@ -12,12 +12,12 @@ const Navbar = () => {
       <div>
         <ul>
           {menuItems.map((e) => (
-            <li>{e}</li>
+            <button>{e}</button>
           ))}
-          <li>
+          <button>
             <img src="/search.png" width="30px" height="30px" />
             Search
-          </li>
+          </button>
         </ul>
       </div>
       <img

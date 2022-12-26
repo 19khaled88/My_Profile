@@ -43,15 +43,15 @@ const Footer = () => {
           <div>
             <h2>Send Messagae</h2>
             <div>
-              <label>Email</label>
+              <label>Email :</label>
               <input type="email" name="email" placeholder="Email address" />
-              <label>Message</label>
+              <label>Message :</label>
               <textarea
                 type="text"
                 name="text"
                 placeholder="Your Message"
               ></textarea>
-              <button className="btn btn-primary">Send</button>
+              <button className="btn btn-primary btn-sm">Send</button>
             </div>
           </div>
         </div>

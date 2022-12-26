@@ -31,7 +31,7 @@ const Skill = () => {
           </div>
         ))}
       </div>
-      <div>
+      <div className="tools">
         <p>I love to use them</p>
         <div>
           {tools.map((e) => (

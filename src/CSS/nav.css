@@ -36,12 +36,23 @@
     width: 100%;
     height: 70px;
 }
-.Nav div:nth-child(2) ul > li{
+.Nav div:nth-child(2) ul > button{
     text-align: right;
     cursor: pointer;
+    transition: all 1s;
+    padding: 5px 20px 5px 20px;
    
 }
-.Nav div:nth-child(2) > ul > li:nth-child(6) > img{
+.Nav div:nth-child(2) ul > button:hover{
+    text-align: right;
+    cursor: pointer;
+    transform: translateY(-8px);
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    background-color: #0eaae8;
+    color:white;
+}
+.Nav div:nth-child(2) > ul > button:nth-child(6) > img{
     text-align: right;
     float: right;
     display: row;
