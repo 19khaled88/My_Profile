@@ -73,15 +73,13 @@ const Particle = () => {
           </div>
         </div>
         <div>
-          <div>
-            <img src="/programming.png" alt="No Image" />
-            <img src="/code.png" alt="No Image" />
-            <img src="/binary-code.png" alt="No Image" />
-            <img src="/cloud.jpg" alt="No Image" />
+          <div className="icons">
+            <img  src="/programming.png" alt="No Image" />
+            <img  src="/code.png" alt="No Image" />
           </div>
           <img src="/hero.png" alt="No image" />
 
-          <div className="circular1">
+          <div className="circular3">
             <img src="/circle.png" alt="No image" />
           </div>
           <div className="circular2">

@@ -1,17 +1,46 @@
 
 .Particle{
     position: relative;    
-    height: 100vh;
-    background: #614385;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 89vh;
+    
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 .Particle > div:nth-child(1){
     position: absolute;
     display: flex;
     flex-direction: row;
+    
 }
+
+.Particle > div:nth-child(1) > div:nth-child(1) > div:nth-child(5){
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color:#222f43 ;
+    width: 320px;
+    position: relative;
+    padding: 8px;
+}
+.Particle > div:nth-child(1) > div:nth-child(1) >p:nth-child(4){
+    padding-bottom: 10px;
+}
+.Particle > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > input{
+    background-color: #222f43;
+}
+.Particle > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > button{
+    border: none;
+    border-radius: 8px;
+    padding: 5px 20px 5px 20px;
+    background-color: #0daae7;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+   
+}
+
 
 /*Inner div first*/
 .Particle > div:nth-child(1) > div:nth-child(1){
@@ -20,8 +49,16 @@
     padding-left: 40px;
     padding-right: 10px;
     text-align: left;
+    color: white;
 }
-
+.Particle >div:nth-child(1) >div:nth-child(1) h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.Particle >div:nth-child(1) >div:nth-child(1) p:nth-child(2){
+    font-size: 18px;
+    font-weight: 400;
+}
 
 
 
@@ -29,6 +66,7 @@
 .Particle > div:nth-child(1) > div:nth-child(2) {
     flex: 1;
     position: relative;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,22 +79,15 @@
     position: absolute;
     top: 20px;
     left: 30px;
+    animation: icon1 12s infinite;
 }
 .Particle > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > img:nth-child(2){
     position: absolute;
-    top: 40px;
-    left: 50px;
-}
-.Particle > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > img:nth-child(3){
-    position: absolute;
-    top: 60px;
-    left: 70px;
-}
-.Particle > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > img:nth-child(4){
-    position: absolute;
-    top: 80px;
+    top: 250px;
     left: 90px;
+    animation: zoom-in-zoom-out 10s infinite;
 }
+
 .Particle > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > img{
     width: 50px; height: 50px;
 }
@@ -78,39 +109,36 @@
 }
 
 
-.circular1 {
+.circular3 {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    -webkit-animation: action 1s infinite  alternate;
-    animation: action 1s infinite  alternate;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: action 2s infinite  alternate;
+    animation: action 2s infinite  alternate;
     position: absolute;
+    right: 80px;
     top: 100px;
 }
+
 .circular2 {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    -webkit-animation: action1 1s infinite  alternate;
-    animation: action1 1s infinite  alternate;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: action2 5s infinite  alternate;
+    animation: action2 5s infinite  alternate;
     position: absolute;
+    right: 140px;
     bottom: 100px;
 }
 
-@keyframes circular1{
+@keyframes circular3{
     0%  {top:100}
     25% {top: 200;}
     50% {top: 250}
     75% {top:200}
     100%{top:100}
   }
-@keyframes circular2{
-    0%  {top:100}
-    25% {top: 200;}
-    50% {top: 250}
-    75% {top:200}
-    100%{top:100}
-  }
+
 @-webkit-keyframes action {
     0% { transform: translateY(0); }
     100% { transform: translateY(-20px); }
@@ -120,14 +148,132 @@
     0% { transform: translateY(0); }
     100% { transform: translateY(-20px); }
 }
-@-webkit-keyframes action1 {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-30px); }
-}
+
 
 @keyframes action1 {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-30px); }
+    25%{transform: scale(.7,.7);}
+    50% {transform: translateX(20px); }
+    75% {transform: scale(.9,.9);}
+    100% { transform: translateY(-40px);  }
 }
+@keyframes action2{
+    0% {transform: translate(0,0)}
+    25%{transform: translate(30px,40px);}
+    100%{transform: translate(10px, 20px)}
+}
+
+@keyframes icon1{
+    0%   {border: 1px solid green; left:0px; top:200px;rotate: 0deg;}
+    20%  {rotate: 90deg;}
+    25%  {border: 1px solid red; left:133px; top:45px;}
+    45%  {rotate: 180deg;}
+    50%  {border: 1px solid blue; left:266px; top:100px;}
+    70%  {rotate: 270deg;}
+    75%  {border: 1x solid black; left:200px; top:290px;}
+    95%  {rotate: 310deg;}
+    100% {border: 1px solid orange; left:1px; top:200px;rotate: 360deg;}
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(.7, .7);
+      rotate: 0deg;
+    }
+    50% {
+      transform: scale(.9,.9);
+      rotate: 180deg;
+    }
+    100% {
+      transform: scale(.7, .7);
+      rotate: 360deg;
+    }
+
+  }
+
+
+
+
+   /*Responsive Media Query codes*/
+   @media screen and (min-width: 320px) { 
+    .Particle > div:nth-child(1){
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    .Particle > div:nth-child(1) > div:nth-child(1){
+        padding-bottom: 15px;
+    }
+    .Particle > div:nth-child(1) > div:nth-child(2) {
+        position: relative;
+    }
+    .Particle > div:nth-child(1) > div:nth-child(2) img:nth-child(2){
+        width: 40%;
+        height: 75%;
+    }
+
+    .Particle > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > img:nth-child(1){
+        position: absolute;
+        bottom: 20px;
+    }
+ 
+   }
+   @media screen and (min-width: 480px) {  
+    .Particle > div:nth-child(1) > div:nth-child(2) img:nth-child(2){
+        width: 30%;
+        height: 70%;
+       
+    }
+   }
+   @media screen and (min-width: 600px) {  
+    .Particle > div:nth-child(1) > div:nth-child(2) img:nth-child(2){
+        width: 30%;
+        height: 80%;
+       
+    }
+   }
+   @media screen and (min-width: 768px) { 
+
+    .Particle > div:nth-child(1) > div:nth-child(2) img:nth-child(2){
+        width: 30%;
+        height: 80%;
+       
+    }
+      
+   }
+   @media screen and (min-width: 900px) {  
+    .Particle > div:nth-child(1) > div:nth-child(2) img:nth-child(2){
+        width: 25%;
+        height: 80%;
+       
+    }
+   
+   }
+   @media screen and (min-width: 1024px) { 
+    .Particle > div:nth-child(1){
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+    }
+    .Particle > div:nth-child(1) > div:nth-child(2) img:nth-child(2){
+        width: 55%;
+        height: 50%;
+       
+    }
+    .Particle > div:nth-child(1) > div:nth-child(2){
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       
+    }
+   }
+   @media screen and (min-width: 1200px) { 
+    .Particle > div:nth-child(1) > div:nth-child(2) > img:nth-child(2){
+        width: 50%;
+        height: 50%;
+    }
+   
+   }
 
 
