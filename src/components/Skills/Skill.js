@@ -20,7 +20,6 @@ const Skill = () => {
           ))}
         </ul>
       </div>
-
       <div>
         {design.map((e) => (
           <div className="card w-44 h-32 bg-primary text-primary-content">
@@ -36,7 +35,7 @@ const Skill = () => {
         <div>
           {tools.map((e) => (
             <div>
-              <img src={e.image} alt="No Image" width="60%" height="40%" />
+              <img src={e.image} alt="No Image" />
               <h3>{e.title}</h3>
             </div>
           ))}

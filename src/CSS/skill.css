@@ -231,6 +231,10 @@
           flex-direction: column;
           align-items: center;
         }
+        .tools > div:nth-child(2) > div > img{
+          width: 55%;
+          height: 55%;
+        }
        }
        @media screen and (min-width: 480px) {  
           
@@ -376,5 +380,15 @@
         .skill > div:nth-child(4) > div:nth-child(2) > div > img {
           width: 55%;
           height: 55%;
+        }
+        .tools > div:nth-child(2) > div{
+          height: 100px;
+          width: 100px;
+
+        }
+        .tools > div:nth-child(2) > div > img:nth-child(1){
+          padding-top: 10px;
+          height: 200px;
+          width: 200px;
         }
        }
