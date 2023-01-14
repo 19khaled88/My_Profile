@@ -5,7 +5,7 @@ import '../../CSS/particle.css'
 const Particle = () => {
   const settings = {
     particle: {
-      particleCount: 165,
+      particleCount: 50,
       color: '#fff',
       minSize: 1,
       maxSize: 4,
@@ -26,8 +26,8 @@ const Particle = () => {
         <div>
           <h3>Hello,</h3>
           <p>
-            This is Md. Khaled Ahasan, and he is a full stack developer (MERN
-            Stack)
+          This is Md. Khaled Ahasan,a wanderful and commited full stack
+          developer (MERN Stack)
           </p>
           <span
             style={{
@@ -68,7 +68,7 @@ const Particle = () => {
             web application with ReactJS in front end and Node js for back end.
           </p>
           <div>
-            <input type="text" placeholder="Type your email address"></input>
+            <input type="text" className='text' placeholder="Type your email address"></input>
             <button>Mail Me</button>
           </div>
         </div>

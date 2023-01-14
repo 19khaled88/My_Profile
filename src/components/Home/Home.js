@@ -6,14 +6,16 @@ import Particle from '../Particle/Particle'
 
 import Projects from '../Projects/projects'
 import Skill from '../Skills/Skill'
+import Skills from '../Skills/Skills'
 import Test from '../Test/test'
 const Home = () => {
   return (
     <div className="Home">
       <Layout>
         <Particle />
-        <Skill />
-        <Projects />
+        <Skills />
+      { /* <Skill />
+        <Projects /> */}
        
       
       </Layout>

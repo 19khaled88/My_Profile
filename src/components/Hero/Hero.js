@@ -7,8 +7,8 @@ const Hero = () => {
       <div>
         <h3>Hello,</h3>
         <p>
-          This is Md. Khaled Ahasan, and he is a full stack developer (MERN
-          Stack)
+          This is Md. Khaled Ahasan,a wanderful and commited full stack
+          developer (MERN Stack)
         </p>
         <span
           style={{

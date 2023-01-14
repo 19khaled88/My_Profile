@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.2.1",
     "daisyui": "^2.45.0",
     "framer-motion": "^7.10.3",
+    "npm-watch": "^0.11.0",
     "proton-engine": "^5.4.5",
     "raf-manager": "^0.3.0",
     "react": "^18.2.0",
