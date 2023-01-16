@@ -1,17 +1,22 @@
 import React from 'react';
 import '../../CSS/skills.css'
+
+import Swiper from 'swiper';
 import { skillSet,tools,design} from '../../data/data'
 const Skills = () => {
+  
+  
   return (
     <div className='skillContainer'>
+    <h1>Core Skills that I belong to</h1>
       <div className='coreSkill'>
         <h3>Core Skills</h3>
         <div>
           {
             skillSet.map((skills)=>(
-                <span>
-                <img src={skills.image} alt="No Image" width="30px" height="30px" />
-                <p>{skills.name}</p>
+                <span key={skills.id}>
+                  <img src={skills.image} alt="No Image" width="30px" height="30px" />
+                  <p>{skills.name}</p>
                 </span>
             ))
           }
@@ -22,7 +27,7 @@ const Skills = () => {
         <div className='hexaContainer'>
             {
                 design.map((design)=>(
-                    <div className='hexagon'>
+                    <div key={design.id} className='hexagon'>
                         <p className='text'>{design.title}</p>
                         <div className='shape'>
                             
@@ -36,6 +41,18 @@ const Skills = () => {
     
       <div className='Tools'>
         <h3>Tools</h3>
+        <ul className='item'>
+            {
+              tools.map((item)=>(
+                <li>
+                 <p className='title'>{item.title}</p>
+                  <span>
+                    <img className='img' src={item.image} alt="No Image" width="35px" height="35px" />
+                  </span>
+                </li>
+              ))
+            }
+        </ul>
       </div>
     </div>
   );

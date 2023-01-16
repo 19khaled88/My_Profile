@@ -1,7 +1,7 @@
 
 .Particle{
     position: relative;    
-    height: 89vh;
+    
     
     background: #000428;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
@@ -61,6 +61,7 @@
     padding-right: 10px;
     text-align: left;
     color: white;
+    
 }
 .Particle >div:nth-child(1) >div:nth-child(1) h3{
     font-size: 30px;
@@ -77,13 +78,12 @@
 .Particle > div:nth-child(1) > div:nth-child(2) {
     flex: 1;
     position: relative;
-    
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-right: 40px;
     padding-left: 10px;
-    height: 100vh;
+    height: 100%;
     
 }
 .Particle > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > img:nth-child(1){
@@ -214,9 +214,11 @@
     }
     .Particle > div:nth-child(1) > div:nth-child(1){
         padding-bottom: 15px;
+        flex: 1;
     }
     .Particle > div:nth-child(1) > div:nth-child(2) {
         position: relative;
+        flex: 1;
     }
     .Particle > div:nth-child(1) > div:nth-child(2) img:nth-child(2){
         width: 40%;
@@ -230,6 +232,13 @@
  
    }
    @media screen and (min-width: 480px) {  
+    /* .Particle > div:nth-child(1){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Particle > div:nth-child(1) > div:nth-child(1){flex: 1;}
+    .Particle > div:nth-child(1) > div:nth-child(2){flex: 1;} */
+
     .Particle > div:nth-child(1) > div:nth-child(2) img:nth-child(2){
         width: 30%;
         height: 70%;
@@ -237,10 +246,26 @@
     }
    }
    @media screen and (min-width: 600px) {  
+    .Particle{
+        height: 100%;
+        
+    }
+    
+    .Particle > div:nth-child(1) > div:nth-child(1) > div:nth-child(5){
+       
+        padding-bottom: 20px;
+    }
+    .Particle > div:nth-child(1) > div:nth-child(1){
+        flex: 1;
+      
+    }
+    .Particle > div:nth-child(1) > div:nth-child(2){
+        flex: 1;
+        
+    }
     .Particle > div:nth-child(1) > div:nth-child(2) img:nth-child(2){
         width: 30%;
         height: 80%;
-       
     }
    }
    @media screen and (min-width: 768px) { 
@@ -248,6 +273,7 @@
     .Particle > div:nth-child(1) > div:nth-child(2) img:nth-child(2){
         width: 30%;
         height: 80%;
+
        
     }
       
@@ -280,6 +306,9 @@
     }
    }
    @media screen and (min-width: 1200px) { 
+    .Particle{
+        height: 89vh;
+    }
     .Particle > div:nth-child(1) > div:nth-child(2) > img:nth-child(2){
         width: 50%;
         height: 50%;

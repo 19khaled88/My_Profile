@@ -1,7 +1,7 @@
 import React from 'react'
 import ParticleBackground from 'react-particle-backgrounds'
 import { TypeAnimation } from 'react-type-animation'
-import '../../CSS/particle.css'
+import '../../CSS/particles.css'
 const Particle = () => {
   const settings = {
     particle: {
@@ -67,7 +67,7 @@ const Particle = () => {
             feel that Node.js is the best match with ReactJS. I love to develope
             web application with ReactJS in front end and Node js for back end.
           </p>
-          <div>
+          <div className='button'>
             <input type="text" className='text' placeholder="Type your email address"></input>
             <button>Mail Me</button>
           </div>
@@ -77,7 +77,7 @@ const Particle = () => {
             <img  src="/programming.png" alt="No Image" />
             <img  src="/code.png" alt="No Image" />
           </div>
-          <img src="/hero.png" alt="No image" />
+          <img src="/hero_2.png" alt="No image" />
 
           <div className="circular3">
             <img src="/circle.png" alt="No image" />

@@ -1,5 +1,10 @@
 .skillContainer{
-    padding-top: 40px;
+    padding-top: 20px;
+    height: 100%;
+}
+.skillContainer > h1{
+    font-size: 25px;
+    font-weight: 500;
 }
 .coreSkill{
     width: 90%;
@@ -48,7 +53,6 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
     border: 1px solid #0cb7df;
     border-radius: 5px;
 }
@@ -74,6 +78,7 @@
 
 .hexaContainer .hexagon{
     position: relative;
+    top: 1px;
     width: 90px;
     height: 90px;
     margin: 40px 20px 40px;
@@ -127,6 +132,11 @@
 
 
 
+
+
+
+
+
  /*Responsive Media Query codes*/
     @media screen and (min-width: 320px) { 
         .coreSkill > div{
@@ -139,7 +149,122 @@
         .uiSkill .hexaContainer{
             display: grid;
             grid-template-columns: repeat(1,1fr);
+            margin: auto;
         } 
+        .uiSkill .hexaContainer .hexagon{
+            width: 150px;
+            height: 150px;
+            margin: 50px ;
+            bottom: -30px;
+        }
+        .uiSkill .hexaContainer .hexagon .text{
+            top:-50px;
+            width: 200px;
+        }
+        .uiSkill .hexaContainer .hexagon .shape img{
+            width: 100%;
+        }
+
+
+
+        .Tools{
+            height: 100%;
+            position: relative;
+            width: 90%;
+            margin: auto;
+            padding-top: 20px;
+        }
+            
+        .Tools .item{
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 20px;
+            column-gap: 20px;
+            padding: 10px 20px 50px 20px;
+            
+        }
+        .Tools .item .title{
+            padding-bottom: 20px;
+        }
+
+        .Tools > h3{
+            text-align: left;
+            font-size: 25px;
+            font-weight: 500;
+            color: #0cb7df;
+            padding-left: 5px;
+
+            border-left: 5px solid #FB2576;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .Tools .item > li{
+            list-style: none;
+            margin: 10px 40px;
+            height: 140px;
+            margin: auto;
+            
+        }
+
+        .Tools .item > li > span .img{
+            font-size: 40px;
+            color: #262626;
+            padding: 15px;
+            transition: .5s;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 100%;
+            width: 100%;
+        }   
+
+        .Tools .item > li > span{
+            position: relative;
+            display: block;
+            width: 80px;
+            height: 80px;
+            background: #FB2576;
+            text-align: center;
+
+
+            transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+            transition: .5s;
+            box-shadow: -20px 20px 10px rgba(0,0,0,.5); 
+        }
+
+        .Tools .item > li span::before{
+            content: "";
+            position: absolute;
+            top:10px;
+            left: -20px;
+            height: 100%;
+            width: 20px;
+            background: #b1b1b1;
+            transition: .5s;
+            transform: rotate(0deg) skewY(-45deg);
+        }
+
+        .Tools .item > li span::after{
+            content: "";
+            position: absolute;
+            bottom:-20px;
+            left: -10px;
+            height: 20px;
+            width: 100%;
+            background: #b1b1b1;
+            transition: .8s;
+            transform: rotate(0deg) skewX(-45deg);
+        }
+
+        .Tools .item > li span:hover{
+            transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(15px,-15px);
+            box-shadow: -50px 50px 10px rgba(0, 0, 0, 0.5);
+        }
        
    }
    @media screen and (min-width: 480px) {  
@@ -162,6 +287,37 @@
         row-gap: 10px;
         
     }
+
+    .uiSkill .hexaContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+    } 
+    .uiSkill .hexaContainer .hexagon{
+        width: 150px;
+        height: 150px;
+        margin: 50px ;
+        bottom: -30px;
+    }
+    .uiSkill .hexaContainer .hexagon .text{
+        top:-50px;
+        width: 200px;
+    }
+    .uiSkill .hexaContainer .hexagon .shape img{
+        width: 100%;
+    }
+
+    .Tools .item{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 20px;
+        padding: 10px 20px 50px 20px;
+        
+    }
    }
    @media screen and (min-width: 900px) {  
     .coreSkill > div{
@@ -180,15 +336,98 @@
         row-gap: 10px;
         
     }
+
+    .uiSkill .hexaContainer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: auto;
+    } 
+    .uiSkill .hexaContainer .hexagon{
+        width: 150px;
+        height: 150px;
+        margin: 50px ;
+        bottom: -30px;
+    }
+    .uiSkill .hexaContainer .hexagon .text{
+        top:-50px;
+        width: 200px;
+    }
+    .uiSkill .hexaContainer .hexagon .shape img{
+        width: 100%;
+    }
+    .Tools .item{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+        column-gap: 20px;
+        padding: 10px 20px 50px 20px;
+        
+    }
    
    }
    @media screen and (min-width: 1200px) {     
-    .coreSkill > div{
-        display: grid;
-        grid-template-columns: repeat(7,1fr);
-        column-gap: 20px;
-        row-gap: 10px;
-        
-    } 
+        .coreSkill > div{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            column-gap: 20px;
+            row-gap: 10px;
+            
+        } 
+
+        .uiSkill .hexaContainer{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            margin: auto;
+            
+        } 
+        .uiSkill .hexaContainer .hexagon{
+            width: 110px;
+            height: 100px;
+            margin: 50px ;
+            bottom: -30px;
+        }
+        .uiSkill .hexaContainer .hexagon .text{
+            top:-50px;
+            width: 200px;
+        }
+        .uiSkill .hexaContainer .hexagon .shape img{
+            width: 100%;
+        }
+
+
+
+
+        .Tools{
+                position: relative;
+                height: 200px;
+                width: 90%;
+                margin: auto;
+                padding-top: 20px;
+        }
+            
+        .Tools .item{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            padding: 10px 20px 10px 20px;
+            
+        }
+
+      
    }
+
+
+
+
+
+
 

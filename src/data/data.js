@@ -1,4 +1,26 @@
-export const menuItems = ['Home', 'About', 'Projects', 'Resume', 'Contact']
+export const menuItems = [
+  {
+    id:1,
+    btn:'Home'
+  },
+  {
+    id:2,
+    btn:'About'
+  },
+  {
+    id:3,
+    btn:'Projects'
+  },
+  {
+    id:4,
+    btn:'Resume'
+  },
+  {
+    id:5,
+    btn:'Contact'
+  },
+  // 'Home', 'About', 'Projects', 'Resume', 'Contact'
+]
 
 export const skillSet = [
   {

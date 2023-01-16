@@ -12,7 +12,7 @@ const Navbar = () => {
       <div>
         <ul>
           {menuItems.map((e) => (
-            <button>{e}</button>
+            <button key={e.id}>{e.btn}</button>
           ))}
           <button>
             <img src="/search.png" width="30px" height="30px" />
@@ -30,7 +30,7 @@ const Navbar = () => {
 
       <div id={`${menuStatus === true ? 'activeMenu' : 'inActiveMenu'}`}>
         {menuItems.map((e) => (
-          <a href={`#${e}`}>{e}</a>
+          <a key={e.id} href={`#${e.btn}`}>{e.btn}</a>
         ))}
       </div>
     </div>
