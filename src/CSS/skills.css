@@ -1,15 +1,26 @@
 .skillContainer{
-    padding-top: 20px;
+   
     height: 100%;
+   
 }
 .skillContainer > h1{
     font-size: 25px;
     font-weight: 500;
+    color: white;
+    height: 50px;
+
+    background-color: #f4511e;
+    clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%, 10% 50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .coreSkill{
     width: 90%;
     margin: auto;
     padding-bottom: 20px;
+    padding-top: 15px;
 }
 
 .coreSkill > div{
@@ -188,6 +199,9 @@
         }
         .Tools .item .title{
             padding-bottom: 20px;
+            color: #0cb7df;
+            font-size: 18px;
+            font-weight: 500; 
         }
 
         .Tools > h3{
@@ -233,7 +247,8 @@
 
 
             transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
-            transition: .5s;
+            /* transition: .9s; */
+            transition: 0.9s;
             box-shadow: -20px 20px 10px rgba(0,0,0,.5); 
         }
 
@@ -262,7 +277,7 @@
         }
 
         .Tools .item > li span:hover{
-            transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(15px,-15px);
+            transform:  perspective(1000px) rotate(-30deg) skew(25deg) translate(15px,-15px);
             box-shadow: -50px 50px 10px rgba(0, 0, 0, 0.5);
         }
        

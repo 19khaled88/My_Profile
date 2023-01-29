@@ -20,7 +20,7 @@ export default class Canvas extends React.Component {
     canvas.width = width
     canvas.height = height
 
-    console.log(width)
+    // console.log(width)
 
     if (this.props.globalCompositeOperation) {
       const context = canvas.getContext('2d')

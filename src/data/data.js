@@ -1,23 +1,23 @@
 export const menuItems = [
   {
-    id:1,
-    btn:'Home'
+    id: 1,
+    btn: 'Home',
   },
   {
-    id:2,
-    btn:'About'
+    id: 2,
+    btn: 'About',
   },
   {
-    id:3,
-    btn:'Projects'
+    id: 3,
+    btn: 'Projects',
   },
   {
-    id:4,
-    btn:'Resume'
+    id: 4,
+    btn: 'Resume',
   },
   {
-    id:5,
-    btn:'Contact'
+    id: 5,
+    btn: 'Contact',
   },
   // 'Home', 'About', 'Projects', 'Resume', 'Contact'
 ]
@@ -138,5 +138,68 @@ export const tools = [
     id: 5,
     title: 'heroku',
     image: '/tools/heroku.png',
+  },
+]
+
+export const projects = [
+  {
+    id: 1,
+    images: '',
+    name: 'Bicycle tools manufacturer',
+    technologies: ['#React JS', '#Node JS'],
+    live: 'https://bicycletoolsmanufacturer.web.app/',
+    ui_github: 'https://github.com/19khaled88/manufacture-tools',
+    server_github: 'https://github.com/19khaled88/manufacture-tools-server',
+    read_more: 'read more',
+  },
+  {
+    id: 2,
+    images: '',
+    name: 'Bicycle tools manufacturer',
+    technologies: ['#React JS', '#Node JS'],
+    live: 'https://bicycletoolsmanufacturer.web.app/',
+    ui_github: 'https://github.com/19khaled88/manufacture-tools',
+    server_github: 'https://github.com/19khaled88/manufacture-tools-server',
+    read_more: 'read more',
+  },
+  {
+    id: 3,
+    images: '',
+    name: 'Bicycle tools manufacturer',
+    technologies: ['#React JS', '#Node JS'],
+    live: 'https://bicycletoolsmanufacturer.web.app/',
+    ui_github: 'https://github.com/19khaled88/manufacture-tools',
+    server_github: 'https://github.com/19khaled88/manufacture-tools-server',
+    read_more: 'read more',
+  },
+  {
+    id: 4,
+    images: '',
+    name: 'Bicycle tools manufacturer',
+    technologies: ['#React JS', '#Node JS'],
+    live: 'https://bicycletoolsmanufacturer.web.app/',
+    ui_github: 'https://github.com/19khaled88/manufacture-tools',
+    server_github: 'https://github.com/19khaled88/manufacture-tools-server',
+    read_more: 'read more',
+  },
+  {
+    id: 5,
+    images: '',
+    name: 'Bicycle tools manufacturer',
+    technologies: ['#React JS', '#Node JS'],
+    live: 'https://bicycletoolsmanufacturer.web.app/',
+    ui_github: 'https://github.com/19khaled88/manufacture-tools',
+    server_github: 'https://github.com/19khaled88/manufacture-tools-server',
+    read_more: 'read more',
+  },
+  {
+    id: 6,
+    images: '',
+    name: 'Bicycle tools manufacturer',
+    technologies: ['#React JS', '#Node JS'],
+    live: 'https://bicycletoolsmanufacturer.web.app/',
+    ui_github: 'https://github.com/19khaled88/manufacture-tools',
+    server_github: 'https://github.com/19khaled88/manufacture-tools-server',
+    read_more: 'read more',
   },
 ]

@@ -1,23 +1,34 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../../CSS/nav.css'
 import { menuItems } from '../../data/data.js'
 const Navbar = () => {
   const [menuStatus, setMenuStatus] = useState(false)
+  const navigate = useNavigate()
   const mobileMenu = () => {
     setMenuStatus(!menuStatus)
   }
+  const urlHandler = (link) => {
+    if (link === 'Home') {
+      navigate(`/`)
+    } else {
+      navigate(`/${link}`)
+    }
+  }
   return (
     <div className="Nav">
-      <div>Logo</div>
+      <div>Portfolio</div>
       <div>
         <ul>
           {menuItems.map((e) => (
-            <button key={e.id}>{e.btn}</button>
+            <button key={e.id} onClick={() => urlHandler(e.btn)}>
+              {e.btn}
+            </button>
           ))}
-          <button>
+         {/* <button>
             <img src="/search.png" width="30px" height="30px" />
             Search
-          </button>
+          </button> */}
         </ul>
       </div>
       <img
@@ -30,7 +41,9 @@ const Navbar = () => {
 
       <div id={`${menuStatus === true ? 'activeMenu' : 'inActiveMenu'}`}>
         {menuItems.map((e) => (
-          <a key={e.id} href={`#${e.btn}`}>{e.btn}</a>
+          <a key={e.id} href={`#${e.btn}`}>
+            {e.btn}
+          </a>
         ))}
       </div>
     </div>

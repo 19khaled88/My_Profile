@@ -44,9 +44,10 @@ const Hero = () => {
           />
         </span>
         <p>
-          Javascirpt is my favourit language for developing web application. I
-          feel that Node.js is the best match with ReactJS. I love to develope
-          web application with ReactJS in front end and Node js for back end.
+          Javascirpt is my favourite language when it comes to develope web
+          applications. I have strong fascination with React.js and Node.js when
+          I use to implement mongodb database for my projects. My next goal is
+          to get skilled in web3 technology and wordpress.
         </p>
         <div>
           <input type="text" placeholder="Type your email address"></input>

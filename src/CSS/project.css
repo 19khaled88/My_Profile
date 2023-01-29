@@ -1,144 +1,173 @@
-.Projects{
-    height: 100vh;
+.projectContainer{
+    padding-bottom: 20px;
+    height:100%;
     background: #41295a;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.Projects > h1:nth-child(1){
-    font-size: 30px;
-    font-weight: 600;
+.projectContainer > h1{
+    height: 50px;
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.Projects > div:nth-child(2){
+    font-size: 25px;
+    font-weight: 500;
+   
+    background-color: #f4511e;
+    clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%, 10% 50%);
     display: flex;
     flex-direction: row;
-    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 95%;
     margin: auto;
-    justify-content: space-around;
-    padding-bottom: 10px;
+    padding-top: 20px;
 }
-.Projects > div:nth-child(3){
+
+.link-btn{
     display: flex;
     flex-direction: row;
-    width: 60%;
+    justify-content: space-between;
+    padding: 10px 0px 0px 0px;
+}
+.link-btn > span > a {
+    height: 30px;
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+
+
+.cta {
+    position: relative;
     margin: auto;
-    justify-content: space-around;
-}
-.Projects >div:nth-child(2) > div > div{
-    display: flex;
-    flex-direction: columns;
-    padding: 10px 10px 15px 10px;
-}
-.Projects > div:nth-child(2) > div:nth-child(1) > div > span:nth-child(1){
-    display: flex;
-    flex-direction: row;
-}
-.Projects > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(3){
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.Projects > div:nth-child(2) > div:nth-child(2) > div > span:nth-child(1){
-    display: flex;
-    flex-direction: row;
-}
-.Projects > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3){
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    padding: 15px 22px;
+    transition: all .2s ease; }
+    .cta:before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 0;
+      display: block;
+      border-radius: 28px;
+      background: rgba(255, 171, 157, 0.5);
+      width: 56px;
+      height: 33px;
+      transition: all .3s ease; }
+    .cta span {
+      position: relative;
+      font-size: 13px;
+      line-height: 18px;
+      font-weight: 900;
+     
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      vertical-align: middle; }
+    .cta svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #111;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all .3s ease; }
+    .cta:hover:before {
+      width: 100%;
+      background: #ffab9d; }
+    .cta:hover svg {
+      transform: translateX(0); }
+    .cta:active {
+      transform: scale(0.96); }
+     
 
-.Projects > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    padding: 15px 5px 15px 5px;
-}
-.Projects > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) span:nth-child(1){
+.card-link{
     display: flex;
     flex-direction: row;
-}
-.Projects > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) div:nth-child(3){
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    justify-content: space-between;
     align-items: center;
+    gap:3px;
 }
 
-.Projects > div:nth-child(3) > div:nth-child(2) > div:nth-child(2){
-   display: flex;
-   flex-direction: column;
-   gap: 2px;
-   padding: 15px 5px 15px 5px;
+.card_body{
+    padding: 0;
+    text-align: left;
 }
-.Projects > div:nth-child(3) > div:nth-child(2) div:nth-child(2) >span:nth-child(1){
-    display: flex;
-    flex-direction: row ;
+.card_body > h1:nth-child(1) > span{color:navy;font-weight: 500;font-size: 15px;}
+.technologies{
+    color:navy;font-weight: 500;font-size: 15px;
 }
-.Projects > div:nth-child(3) > div:nth-child(2) div:nth-child(2) >div:nth-child(3){
-    display: flex;
-    flex-direction: row ;
-    width: 90%;
-    justify-content: space-between;
-    align-items: center;
+.card_body >h1:nth-child(2){ display: flex;flex-direction: row; gap: 5px;}
+.card_body > h1:nth-child(1) , h1:nth-child(2){
+    padding: 3px 8px 3px 8px;
+}
+
+.readbutton{
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+   
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+.readbutton > p{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    top:2px;
+    
+    width: 100%;
+    height: 100%;
+}
+.readbutton > p::after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+}
+.readbutton:hover > p{
+    padding-right: 15px;
+}
+.readbutton:hover p::after{
+    opacity: 1;
+    right: 10px;
 }
 
 
-.Projects > div:nth-child(3) > div:nth-child(3) > div:nth-child(2){
-   display: flex;
-   flex-direction: column;
-   gap: 2px;
-   padding: 15px 5px 15px 5px;
-}
-.Projects > div:nth-child(3) > div:nth-child(3) div:nth-child(2) >span:nth-child(1){
-    display: flex;
-    flex-direction: row ;
-}
-.Projects > div:nth-child(3) > div:nth-child(3) div:nth-child(2) >div:nth-child(3){
-    display: flex;
-    flex-direction: row ;
-    width: 90%;
-    justify-content: space-between;
-    align-items: center;
-}
-/* .Projects > div:nth-child(3) > div:nth-child(2) > div:nth-child(2){
-    display: flex;
-    flex-direction: row;
-}
-.Projects > div:nth-child(3) > div:nth-child(3) > div:nth-child(2){
-    display: flex;
-    flex-direction: row;
-} */
+
+
+
 
 @media screen and (min-width: 320px) { 
-    .Projects{
-        height: 100%;
-    }
-    .Projects > div:nth-child(2){
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .Projects > div:nth-child(3){
+    .projects{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        gap:15px;
-        align-items: center;
-        margin: auto;
-        padding-bottom: 30px;
-    }
-    .Projects > div:nth-child(3) > div{
+        row-gap: 20px;
+        column-gap: 20px;
+        width: 90%;
         margin: auto;
     }
-    .Projects > div:nth-child(2) > div > figure > img{
+    .projects >div >figure:nth-child(1) > img {
         width: 100%;
     }
-    .Projects > div:nth-child(3) > div > figure > img{
-        width: 100%;
+    .link-btn{
+       padding: 5px 8px 15px 8px;  
     }
      
  }
@@ -149,63 +178,40 @@
   
  }
  @media screen and (min-width: 768px) {   
-    
- }
- @media screen and (min-width: 900px) {  
-    .Projects{
-        height: 100%;
-    }
-    .Projects > div:nth-child(2){
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-    .Projects > div:nth-child(3){
-        
+    .projects{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap: 10px;
-        align-items: center;
-        padding-bottom: 30px;
-    }
-    .Projects > div:nth-child(3) > div{
+        row-gap: 20px;
+        column-gap: 20px;
+        width: 90%;
         margin: auto;
     }
-    .Projects > div:nth-child(2) > div > figure > img{
+    .projects >div >figure:nth-child(1) > img {
         width: 100%;
     }
-    .Projects > div:nth-child(3) > div > figure > img{
-        width: 100%;
-    }
+    .link-btn{
+        padding: 5px 1px 15px 1px;  
+     }
+     .link-btn > button{
+        width: 90px;
+        font-size: 14px;
+     }
+ }
+ @media screen and (min-width: 900px) {  
+    
+  
  }
  @media screen and (min-width: 1024px) { 
-   
+ 
  }
  @media screen and (min-width: 1200px) {   
-    .Projects{
-        height: 100vh;
-        padding-bottom: 10px;
-    }
-    .Projects > div:nth-child(2) > div{
-        height: 40vh;
-    }
-    .Projects > div:nth-child(3){
-        
+    .projects{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        gap: 10px;
-        align-items: center;
-    }
-    .Projects > div:nth-child(3) > div{
+        row-gap: 20px;
+        column-gap: 20px;
+        width: 90%;
         margin: auto;
-        height: 40vh;
-    }  
-    .Projects > div:nth-child(2) > div > figure > img{
-        width: 100%;
-        
     }
-    .Projects > div:nth-child(3) > div > figure > img{
-        width: 100%;
-        height: 100%;
-    }
+    
  }
